@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'example00',
+  srcs = [
+    'example00.cpp',
+  ],
+  linker_flags = [
+    '-lcurl',
+  ],
+  deps = [
+    '//:curlpp',
+  ],
+)
